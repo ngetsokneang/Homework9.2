@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    background-image: url(./img/header-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;  
+}
+html{
+    scroll-behavior: smooth;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(30, 30, 30, 0.426);
+    position: fixed;
+}
+.menu-bar{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar .brand-name .nav-link img{
+    width: 200px;
+    height: 70px;
+}
+
+.menu-bar .bar .navbar-nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.menu-bar .navbar-nav .nav-item{
+    list-style-type: none;
+}
+.menu-bar .navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    display: block;
+    padding: 0 25px;
+    color: #fff;
+    transition: 0.4s;
+    line-height: 70px;
+}
+.menu-bar .navbar-nav .nav-item .nav-link:hover{
+    color: gold;
+}
+.text-frond{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+}
+.text-frond h4{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 35px;  
+}
+.text-frond h1{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.text-frond button{
+    padding: 20px 60px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background-color: gold;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container{
+    max-width: 100%;
+    min-height: auto;
+}
+#services{
+    max-width: 1200px;
+    margin:100px auto;
+}
+#services .heading{
+    text-align: center;
+}
+#services .heading h2{
+    font-size: 37px;
+}
+#services .heading p{
+    font-style: italic;
+    padding-top: 14px;
+}
+.main-card{
+    max-width: 1200px;
+    margin-top: 25px;
+    display: flex;
+}
+.main-card .card{
+    max-width: 390px;
+}
+.main-card .card .icon-card{
+    width: 390px;
+    height: 135px;
+}
+.icon-card .circle-icon{
+    width: 120px;
+    /* height: 120px; */
+    border-radius: 50%;
+    background-color: gold;
+    margin: auto;
+}
+.circle-icon .fa-cart-shopping,.fa-laptop{
+    font-size: 60px;
+    color: #fff;
+    margin: 33px 24px;
+}
+.fa-lock{
+    font-size: 62px;
+    color: #fff;
+    margin: 30px 34px;
+}
+.card .title{
+    text-align: center;
+}
+.card .title h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.card .title p{
+    padding: 10px 0;
+    line-height: 25px;
+}
+#portfolio{
+    width: 100%;
+    margin:100px auto;
+    background-color: #F8F9FA;
+    height: 650px;
+}
+.heading h2{
+    text-align: center;
+    font-size: 37px;
+    padding-top: 60px;
+}
+.heading p{
+    text-align: center;
+    font-style: italic;
+    padding-top: 14px;
+}
+.con-img{
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 385px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+}
+.card1 {
+    width: 385px;
+    height: 300px;    
+    background-image: url(./img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.card1 .overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fec700b8;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card1:nth-child(2){
+    background-image: url(./img/shoes.jpg);
+}
+.card1:nth-child(3){
+    background-image: url(./img/3.jpg);
+}
+.card1:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+.fa-plus {
+    color: #fff;
+    font-size: 50px;
+}
+.card1 .text{
+    position: absolute;
+    top: 315px;
+    left: 150px;
+}
+.card1 .text h3{
+    font-size: 29px;
+}
+.card1 .text p{
+    font-style: italic;
+    padding-top: 8px;
+    font-size: 18px;
+}
+@media (max-width:1024px) {
+    .menu-bar{
+        padding: 0 10px;
+    }
+    .container{
+        text-align: center;  
+    }
+    .title p{
+        color: red;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:768px){
+    .bar{
+        display: none;
+    }
+}
